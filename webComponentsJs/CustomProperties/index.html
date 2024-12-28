@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slotted</title>
+    <style>
+        my-element {
+            --primary-color: blue;
+            --heading-primary: 40px;
+        }
+
+        .second {
+            --primary-color: red;
+        }
+
+        .third {
+            --secondary-color: lime;
+        }
+    </style>
+</head>
+
+<body>
+    <my-element>
+        <span slot="heading">Heading 1</span>
+        <span class="txt" slot="paragraph">Paragraph</span>
+    </my-element>
+    <my-element class="second">
+        <span slot="heading">Heading 2</span>
+        <span class="txt" slot="paragraph">Paragraph</span>
+    </my-element>
+    <my-element class="third">
+        <span slot="heading">Heading 3</span>
+        <span class="txt" slot="paragraph">Paragraph</span>
+    </my-element>
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>

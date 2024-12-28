@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Host</title>
+</head>
+
+<body>
+    <my-element>
+        <span slot="heading">Heading 1</span>
+        <span slot="paragraph">Paragraph</span>
+    </my-element>
+    <my-element yellow>
+        <span slot="heading">Heading 2</span>
+        <span slot="paragraph">Paragraph</span>
+    </my-element>
+    <my-element class="blue">
+        <span slot="heading">Heading 3</span>
+        <span slot="paragraph">Paragraph</span>
+    </my-element>
+    <article class="card">
+        <my-element class="blue">
+            <span slot="heading">Heading 3</span>
+            <span slot="paragraph">Paragraph</span>
+        </my-element>
+    </article>
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
